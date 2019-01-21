@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  display: block;
+  margin: auto;
+  width: 332px;
+  height: 360px;
+  background-color: rgba(15, 139, 21, 0.4);
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px;
+}
+
+.sq {
+  display: inline-block;
+  vertical-align: top;
+  height: 90px;
+  width: 110px;
+  margin-right: -3px;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 30px;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: background 0.3s;
+}
+
+.sq:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.bottom {
+  border-bottom: 1px solid black;
+}
+
+.right {
+  border-right: 1px solid black;
+}

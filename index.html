@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="board">
+    <div>
+      <div id="00" class="sq bottom right"></div>
+      <div id="01" class="sq bottom right"></div>
+      <div id="02" class="sq bottom "></div>
+    </div>
+    <div>
+      <div id="10" class="sq bottom right"></div>
+      <div id="11" class="sq bottom right"></div>
+      <div id="12" class="sq bottom"></div>
+    </div>
+    <div>
+      <div id="20" class="sq right"></div>
+      <div id="21" class="sq right"></div>
+      <div id="22" class="sq"></div>
+    </div>
+  </div>
+  <div class="Stats">
+    <h2 id="Winner">It is X's turn.</h2>
+    <button onclick="ResetGame();" id="resetGameButton">Reset Game</button>
+    <button onclick="ResetWinCount();" id="resetWinCount">Reset Game Win Count</button>
+    <button onclick="AIPlayerMove();" id="AIPlayerMove">AI Player Move</button>
+    <h2 id="XWins">X has won 0 total times.</h2>
+    <h2 id="OWins">O has won 0 total times.</h2>
+    <h2 id="TieWins">Tied games 0 total times.</h2>
+  </div>
+</body>
+
+</html>
